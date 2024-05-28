@@ -17,28 +17,37 @@ hi Conceal guibg=black ctermbg=black  ctermfg=white
 hi ColorColumn guibg=black ctermbg=black ctermfg=black
 
 "separators, floaterm color config
-hi Normal guibg=black ctermbg=black  ctermfg=121
-hi NormalFloat guibg=black ctermbg=black guifg=121 ctermfg=121
-hi NormalNC guibg=black ctermbg=black  ctermfg=121
+hi Normal guibg=black ctermbg=black  guifg=white ctermfg=129
+hi NormalFloat guibg=black ctermbg=black guifg=white ctermfg=129
+hi NormalNC guibg=black ctermbg=black  ctermfg=129
 
-hi Normal guibg=black ctermbg=black guifg=cyan ctermfg=white
+hi Normal guibg=black ctermbg=black guifg=white ctermfg=white
 
-hi Linenr guibg=black ctermbg=black guifg=121 ctermfg=121
+hi Linenr guibg=black ctermbg=black guifg=white ctermfg=129
 
-hi SpellBad guibg=black ctermbg=black guifg=red ctermfg=121 cterm=bold
+hi SpellBad guibg=black ctermbg=black guifg=red ctermfg=129 cterm=bold
 
+" for seraching / search 
+hi CurSearch guibg=black ctermbg=black guifg=cyan ctermfg=white cterm=bold
+"comment
+hi Comment guibg=black ctermbg=black guifg=#FFD1DA ctermfg=grey
 
-hi Identifier guibg=black ctermbg=black guifg=white ctermfg=121 cterm = None
-hi Type guibg=black ctermbg=black guifg=white ctermfg=121 cterm = None
-hi Comment guibg=black ctermbg=black guifg=white ctermfg=grey
-hi Conditional guibg=black ctermbg=black guifg=white ctermfg=121 
-hi Keyword guibg=black ctermbg=black guifg=white ctermfg=121 
-hi Search guibg=black ctermbg=0 guifg=white ctermfg=blue cterm=bold 
-hi IncSearch guibg=black ctermbg=0 guifg=white ctermfg=blue cterm=bold 
-hi Error guibg=black ctermbg=black guifg=white ctermfg=red cterm=bold 
-hi Statement guibg=black ctermbg=black guifg=white ctermfg=121
+hi Identifier guibg=black ctermbg=black guifg=pink ctermfg=129 cterm = None
 
-hi Pmenu guibg=black ctermbg=black guifg=white ctermfg=121 
+hi Type guibg=black ctermbg=black guifg=#2BE5A6 ctermfg=129 cterm = None
+
+"conditional statements if
+hi Conditional guibg=black ctermbg=black guifg=pink ctermfg=129 
+"for while statements 
+hi Statement guibg=black ctermbg=black guifg=pink ctermfg=129
+
+hi Keyword guibg=black ctermbg=black guifg=#FBA1B7 ctermfg=129 
+hi Search guibg=black ctermbg=0 guifg=pink ctermfg=blue cterm=bold 
+hi IncSearch guibg=black ctermbg=0 guifg=pink ctermfg=blue cterm=bold 
+hi Error guibg=black ctermbg=black guifg=red ctermfg=red cterm=bold 
+
+hi Pmenu guibg=black ctermbg=black guifg=white ctermfg=129 
+hi PmenuSel guibg=black ctermbg=black guifg=white ctermfg=129 
 hi PmenuSbar guibg=black ctermbg=black guifg=white ctermfg=white
 hi StatusLine guibg=black ctermbg=black ctermfg=white
 
@@ -54,30 +63,30 @@ hi SpecialKey guibg=black ctermbg=black ctermfg=black
 
 hi TabLineFill guibg=black ctermbg=black ctermfg=grey
 hi TabLine guibg=black ctermbg=black ctermfg=grey
-hi TabLineSel guibg=black ctermbg=black ctermfg=121
+hi TabLineSel guibg=black ctermbg=black ctermfg=129
 
 hi Title guibg=black ctermbg=black ctermfg=white
-hi Visual guibg=black ctermbg=black ctermfg=121
-hi VisualNOS guibg=black ctermbg=black ctermfg=121
+hi Visual guibg=black ctermbg=black ctermfg=129
+hi VisualNOS guibg=black ctermbg=black ctermfg=129
 hi Menu guibg=black ctermbg=black ctermfg=black
 
-hi Scrollbar guibg=black ctermbg=black ctermfg=121
-hi CursorIM guibg=black ctermbg=black ctermfg=121
-hi TermCursor guibg=black ctermbg=black ctermfg=121
-hi Folded guibg=black ctermbg=black ctermfg=121
-hi FoldedColumn guibg=black ctermbg=black ctermfg=121
-hi Errormsg guibg=black ctermbg=black ctermfg=121
-hi DiffText guibg=black ctermbg=black ctermfg=121
-hi DiffChange guibg=black ctermbg=black ctermfg=121
-hi DiffDelete guibg=black ctermbg=black ctermfg=121
-hi WinSeparator guibg=black ctermbg=black ctermfg=121
-hi WinSeparator guibg=black ctermbg=black ctermfg=121
-hi TermCursor guibg=black ctermbg=black ctermfg=121
-hi PmenuThumb guibg=black ctermbg=black ctermfg=121
-hi SignColumn guibg=black ctermbg=black ctermfg=121
-hi FoldColumn guibg=black ctermbg=black ctermfg=121
-hi Error guibg=black ctermbg=black ctermfg=121
-hi CursorColumn guibg=black ctermbg=black ctermfg=121
+hi Scrollbar guibg=black ctermbg=black ctermfg=129
+hi CursorIM guibg=black ctermbg=black ctermfg=129
+hi TermCursor guibg=black ctermbg=black ctermfg=129
+hi Folded guibg=black ctermbg=black ctermfg=129
+hi FoldedColumn guibg=black ctermbg=black ctermfg=129
+hi Errormsg guibg=black ctermbg=black ctermfg=129
+hi DiffText guibg=black ctermbg=black ctermfg=129
+hi DiffChange guibg=black ctermbg=black ctermfg=129
+hi DiffDelete guibg=black ctermbg=black ctermfg=129
+hi WinSeparator guibg=black ctermbg=black ctermfg=129
+hi WinSeparator guibg=black ctermbg=black ctermfg=129
+hi TermCursor guibg=black ctermbg=black ctermfg=129
+hi PmenuThumb guibg=black ctermbg=black ctermfg=129
+hi SignColumn guibg=black ctermbg=black ctermfg=129
+hi FoldColumn guibg=black ctermbg=black ctermfg=129
+hi Error guibg=black ctermbg=black ctermfg=129
+hi CursorColumn guibg=black ctermbg=black ctermfg=129
 
 " for coc
 set updatetime=300
@@ -152,7 +161,7 @@ Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
 
 call plug#end()
 
-let g:airline_theme='ayu_mirage'
+let g:airline_theme='atomic'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
