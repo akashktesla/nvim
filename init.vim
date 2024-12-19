@@ -1,5 +1,5 @@
 set encoding=utf-8
-syntax enable
+" syntax enable
 set number
 set relativenumber
 set mouse-=a
@@ -12,9 +12,17 @@ set autoindent
 set fileformat=unix
 set backspace=indent,eol,start
 " set so=999
+set termguicolors
+
+" General settings
+set background=dark
+syntax enable
 
 hi Conceal guibg=black ctermbg=black  ctermfg=white
 hi ColorColumn guibg=black ctermbg=black ctermfg=black
+
+"visual
+hi Visual gui=bold
 
 "separators, floaterm color config
 hi Normal guibg=black ctermbg=black  guifg=white ctermfg=129
@@ -28,20 +36,27 @@ hi Linenr guibg=black ctermbg=black guifg=white ctermfg=129
 hi SpellBad guibg=black ctermbg=black guifg=red ctermfg=129 cterm=bold
 
 " for seraching / search 
-hi CurSearch guibg=black ctermbg=black guifg=cyan ctermfg=white cterm=bold
+hi CurSearch guibg=grey ctermbg=grey guifg=white ctermfg=white cterm=bold
 "comment
-hi Comment guibg=black ctermbg=black guifg=#FFD1DA ctermfg=grey
+hi Comment guibg=black ctermbg=black guifg=grey ctermfg=grey
 
-hi Identifier guibg=black ctermbg=black guifg=pink ctermfg=129 cterm = None
+hi Identifier guibg=black ctermbg=black guifg=white ctermfg=129 cterm = None
 
 hi Type guibg=black ctermbg=black guifg=#2BE5A6 ctermfg=129 cterm = None
 
 "conditional statements if
-hi Conditional guibg=black ctermbg=black guifg=pink ctermfg=129 
-"for while statements 
-hi Statement guibg=black ctermbg=black guifg=pink ctermfg=129
+hi Conditional guibg=black ctermbg=black guifg=#b7a1ff ctermfg=129 
 
-hi Keyword guibg=black ctermbg=black guifg=#FBA1B7 ctermfg=129 
+"for while statements 
+hi Statement guibg=black ctermbg=black guifg=#b7a1ff ctermfg=129
+
+"macro
+hi Macro guibg=black ctermbg=black guifg=cyan ctermfg=129
+
+"keyword
+hi Keyword guibg=black ctermbg=black guifg=#2BE5A6 ctermfg=129 
+
+"search
 hi Search guibg=black ctermbg=0 guifg=pink ctermfg=blue cterm=bold 
 hi IncSearch guibg=black ctermbg=0 guifg=pink ctermfg=blue cterm=bold 
 hi Error guibg=black ctermbg=black guifg=red ctermfg=red cterm=bold 
@@ -158,6 +173,7 @@ Plug 'enricobacis/vim-airline-clock'
 Plug 'MeF0504/vim-pets'
 Plug 'jpalardy/vim-slime', { 'for': 'python' }
 Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
+Plug 'andreasvc/vim-256noir'
 
 call plug#end()
 
@@ -233,4 +249,18 @@ tnoremap <A-S-h> <C-\><C-N><cmd>FloatermPrev <CR>
 
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-y> :TagbarToggle<CR>
+
+
+"Global Copy and Paste
+" Yank to system clipboard
+nnoremap y "+y
+vnoremap y "+y
+
+" Paste from system clipboard
+nnoremap p "+p
+nnoremap P "+P
+
+
+
+
 
